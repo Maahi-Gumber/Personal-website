@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.sidebar .nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar .nav li {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Hide the arrow from <summary> */
+.sidebar details summary {
+    padding-left: 20px;
+    list-style: none;
+}
+
+.sidebar .nav li a,
+.sidebar details summary a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+.sidebar .nav li a:hover,
+.sidebar details summary a:hover  {
+    background-color: #575757;
+}
+
+.content-section {
+    margin-left: 260px;
+    padding: 20px;
+}
+
+.content-frame {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+.sidebar .nav li a:visited,
+.sidebar .nav li a:active,
+.sidebar details summary a:visited,
+.sidebar details summary a:active {
+    color: white;
+}
+
+.sidebar details ul {
+    list-style-type: none;
+    padding-left: 40px; /* Indent sub-options */
+    margin-top: 5px;
+}
+
+.sidebar details ul li a {
+    font-size: 16px;
+    color: lightgray;
+}
+
+.sidebar details ul li a:hover {
+    color: white;
+}
+
+.sidebar details[open] summary a {
+    font-weight: bold;
+}
+
+
+/* reference page styling */
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reference {
+    margin-bottom: 40px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.pdf-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pdf-link:hover {
+    text-decoration: underline;
+}
+
+/* about-page styling */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text {
+    width: 60%;
+}
+
+.about-image img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%; /* Optional: gives your image rounded corners */
+    object-fit: cover;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.6;
+}
